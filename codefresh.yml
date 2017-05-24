@@ -27,6 +27,7 @@ steps:
     commands:
       - ls -l
       - pwd
+      - ls -l build/linux/
 
   build_image:
     type: build
