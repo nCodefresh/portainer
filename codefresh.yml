@@ -23,14 +23,13 @@ steps:
 
   test_step:
     image: portainer/angular-builder:latest
-    working_directory: ${{main_clone}}
+    working_directory: ${{build_frontend}}
     commands:
       - ls -l
       - pwd
 
   build_image:
     type: build
-    working_directory: ${{main_clone}}
-    dockerfile: ./build/linux/Dockerfile
+    dockerfile: build/linux/Dockerfile
     image_name: portainer/portainer
     tag: develop
