@@ -31,6 +31,6 @@ steps:
 
   build_image:
     type: build
-    dockerfile: ${{build_frontend}}/build/linux/Dockerfile
+    dockerfile: ${{main_clone}}/build/linux/Dockerfile
     image_name: portainer/portainer
     tag: develop
