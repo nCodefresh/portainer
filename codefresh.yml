@@ -31,7 +31,7 @@ steps:
 
   build_image:
     type: build
-    working_directory: ${{build_frontend}}
+    working_directory: ./
     dockerfile: build/linux/Dockerfile
     image_name: portainer/portainer
     tag: develop
